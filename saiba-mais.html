@@ -3,89 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materiais e Recursos - Projeto Agrinho</title>
+    <title>Portal de Conhecimento - Projeto Agrinho</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos adicionais exclusivos para deixar a página Saiba Mais super profissional */
+        .secao-detalhada {
+            padding: 40px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .secao-detalhada:last-of-type {
+            border-bottom: none;
+        }
+        .flex-container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .flex-texto {
+            flex: 1;
+        }
+        .flex-midia {
+            flex: 1;
+            min-width: 300px;
+        }
+        .video-responsivo {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            background: #000;
+        }
+        .video-responsivo iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .imagem-profissional {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .lista-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .lista-links li {
+            background: #fff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border-left: 4px solid #1b4d3e;
+        }
+        .lista-links a {
+            color: #1b4d3e;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .lista-links a:hover {
+            color: #84cc16;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+        }
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+            .flex-midia {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <div class="container">
-            <div class="logo">🌿 Agrinho Central</div>
+            <div class="logo">🌿 Agrinho Info</div>
             <nav>
-                <a href="index.html">Voltar ao Início</a>
+                <a href="index.html" style="font-weight: bold; color: #a3e635;">← Voltar ao Início</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero" style="padding: 60px 0; background: linear-gradient(rgba(27, 77, 62, 0.9), rgba(27, 77, 62, 0.9));">
+    <section class="hero" style="padding: 60px 0; background: linear-gradient(rgba(27,77,62,0.9), rgba(27,77,62,0.9));">
         <div class="container">
-            <h1>Central de Conhecimento Agrinho</h1>
-            <p>Explore conteúdos profundos, vídeos educativos e os guias oficiais do programa.</p>
+            <h1>Imersão nos Pilares Pedagógicos</h1>
+            <p>Explore em profundidade os conceitos, vídeos educativos e materiais oficiais que guiam o maior programa de responsabilidade social do Paraná.</p>
         </div>
     </section>
 
-    <main class="container" style="max-width: 900px; padding: 40px 0;">
+    <main class="container" style="max-width: 1000px; margin-top: 40px; margin-bottom: 60px;">
 
-        <article style="margin-bottom: 60px;">
-            <h2 style="color: #1b4d3e; border-bottom: 2px solid #84cc16; padding-bottom: 10px; margin-bottom: 20px;">🌱 Meio Ambiente e Sustentabilidade</h2>
-            <p style="margin-bottom: 15px; color: #444;">A preservação dos recursos naturais é um dos pilares mais antigos do Agrinho. O programa estimula escolas a debaterem a conservação da água, a proteção dos solos contra a erosão e a importância das matas ciliares na manutenção da biodiversidade local.</p>
+        <article class="secao-detalhada">
+            <span class="badge" style="background-color: #22c55e;">🌱 SUSTENTABILIDADE</span>
+            <h2>Meio Ambiente e Consciência Ecológica</h2>
             
-            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=900&q=80" alt="Preservação Ambiental" style="width: 100%; max-height: 350px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
-            
-            <h4 style="margin-bottom: 10px;">Assista: Práticas Sustentáveis no Campo</h4>
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background: #000; margin-bottom: 15px;">
-                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" src="https://www.youtube.com/embed/S_8qU27vP0k" title="Agrinho - Meio Ambiente" allowfullscreen></iframe>
+            <div class="flex-container">
+                <div class="flex-texto">
+                    <p>A preservação ambiental no Agrinho não é tratada apenas como teoria, mas como uma prática urgente. O programa ensina que os recursos naturais do nosso planeta são finitos e dependem de ações integradas entre as comunidades rurais e urbanas.</p>
+                    <br>
+                    <p>Os alunos aprendem sobre a <strong>proteção das bacias hidrográficas</strong>, a importância da cobertura vegetal para evitar o empobrecimento do solo e técnicas fundamentais como a reciclagem e a correta destinação das embalagens no campo.</p>
+                </div>
+                <div class="flex-midia">
+                    <div class="video-responsivo">
+                        <iframe src="https://www.youtube.com/embed/S_8qU27vP0k" title="Agrinho - Meio Ambiente" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </article>
 
-        <article style="margin-bottom: 60px;">
-            <h2 style="color: #1b4d3e; border-bottom: 2px solid #3b82f6; padding-bottom: 10px; margin-bottom: 20px;">🤝 Cidadania e Ética</h2>
-            <p style="margin-bottom: 15px; color: #444;">Formar cidadãos éticos significa ensinar às crianças desde cedo as regras de convivência, o respeito mútuo, a inclusão social e os direitos e deveres de cada indivíduo dentro da comunidade urbana e rural.</p>
+        <article class="secao-detalhada">
+            <span class="badge" style="background-color: #3b82f6;">🤝 COOPERAÇÃO</span>
+            <h2>Cidadania, Ética e Inclusão Social</h2>
             
-            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=900&q=80" alt="Cidadania e Trabalho em Equipe" style="width: 100%; max-height: 350px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+            <div class="flex-container" style="flex-direction: row-reverse;">
+                <div class="flex-texto">
+                    <p>Formar cidadãos significa preparar crianças e jovens para compreenderem seu papel ativo na sociedade. O pilar da Cidadania trabalha intensamente o respeito mútuo, a ética nas relações humanas e o conhecimento dos direitos e deveres constitucionais.</p>
+                    <br>
+                    <p>Através de dinâmicas escolares, o programa estimula a liderança estudantil, o combate ao preconceito de qualquer natureza e a valorização das diversas culturas que enriquecem a história do estado do Paraná.</p>
+                </div>
+                <div class="flex-midia">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=500&q=80" alt="Crianças estudando juntas em cidadania" class="imagem-profissional">
+                </div>
+            </div>
         </article>
 
-        <article style="margin-bottom: 60px;">
-            <h2 style="color: #1b4d3e; border-bottom: 2px solid #ef4444; padding-bottom: 10px; margin-bottom: 20px;">🍎 Saúde e Nutrição</h2>
-            <p style="margin-bottom: 15px; color: #444;">Compreender a jornada dos alimentos de maneira saudável é essencial. Esta vertente aborda a importância da escolha de alimentos frescos, a redução de ultraprocessados e a conexão das crianças com a origem hortifrúti produzida pelo pequeno agricultor.</p>
+        <article class="secao-detalhada">
+            <span class="badge" style="background-color: #ef4444;">🍎 QUALIDADE DE VIDA</span>
+            <h2>Saúde, Bem-Estar e Nutrição Consciente</h2>
             
-            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80" alt="Alimentação Saudável" style="width: 100%; max-height: 350px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+            <div class="flex-container">
+                <div class="flex-texto">
+                    <p>Uma mente sã em um corpo são é a base para o aprendizado completo. Neste pilar, o Agrinho desconstrói mitos alimentares e incentiva o consumo de alimentos frescos e nutritivos produzidos pela agricultura familiar local, contrapondo o excesso de produtos ultraprocessados.</p>
+                    <br>
+                    <p>O material didático detalha todo o caminho do alimento: desde a preparação da terra pelo produtor rural, colheita, transporte seguro, até chegar com o máximo de vitaminas à mesa das famílias nas cidades.</p>
+                </div>
+                <div class="flex-midia">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=500&q=80" alt="Alimentos saudáveis e nutrição" class="imagem-profissional">
+                </div>
+            </div>
         </article>
 
-        <article style="margin-bottom: 60px;">
-            <h2 style="color: #1b4d3e; border-bottom: 2px solid #f59e0b; padding-bottom: 10px; margin-bottom: 20px;">🚀 Empreendedorismo e Autonomia</h2>
-            <p style="margin-bottom: 15px; color: #444;">O empreendedorismo no Agrinho foca no protagonismo do aluno. Através do planejamento de projetos escolares, orçamentos fictícios e ideias inovadoras, o estudante desenvolve resiliência, liderança e capacidade de resolver problemas reais do seu entorno.</p>
+        <article class="secao-detalhada">
+            <span class="badge" style="background-color: #f59e0b;">🚀 INOVAÇÃO</span>
+            <h2>Empreendedorismo e Protagonismo Jovem</h2>
             
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Inovação e Ideias" style="width: 100%; max-height: 350px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+            <div class="flex-container" style="flex-direction: row-reverse;">
+                <div class="flex-texto">
+                    <p>Empreender não significa apenas abrir um negócio, mas sim desenvolver uma postura proativa diante da vida. O Agrinho incentiva os alunos a identificarem problemas reais em suas escolas e bairros e a criarem, de forma autônoma, projetos viáveis para resolvê-los.</p>
+                    <br>
+                    <p>Os estudantes aprendem conceitos valiosos sobre planejamento estratégico, economia financeira, sustentabilidade econômica dos projetos e técnicas de comunicação para apresentar suas ideias à comunidade.</p>
+                </div>
+                <div class="flex-midia">
+                    <div class="video-responsivo">
+                        <iframe src="https://www.youtube.com/embed/n4r8R7f3P9c" title="Agrinho - Empreendedorismo e Projetos" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </article>
 
-        <hr style="border: 0; border-top: 1px solid #ddd; margin-bottom: 40px;">
-
-        <section style="background: #f9f9f9; padding: 30px; border-radius: 8px; border-left: 5px solid #1b4d3e; margin-bottom: 40px;">
-            <h3 style="color: #1b4d3e; margin-bottom: 15px;">🔗 Portais e Regulamentos Oficiais</h3>
-            <p style="margin-bottom: 15px;">Para conferir editais abertos, baixar as apostilas digitais completas ou consultar cronogramas de entrega, acesse:</p>
-            <ul style="margin-left: 20px; line-height: 2;">
+        <section style="margin-top: 50px; background-color: #f8fafc; padding: 30px; border-radius: 12px;">
+            <h3 style="color: #1b4d3e;">🔗 Documentos e Links Oficiais do Sistema FAEP/SENAR-PR</h3>
+            <p style="color: #666; margin-bottom: 15px;">Acesse as fontes governamentais e institucionais para consultar regulamentos vigentes, prazos de inscrições para o concurso anual e baixar cartilhas pedagógicas completas em formato PDF:</p>
+            
+            <ul class="lista-links">
                 <li>
-                    <a href="https://www.sistemafaep.org.br/" target="_blank" style="color: #1b4d3e; font-weight: bold; text-decoration: underline;">
-                        Sistema FAEP/SENAR-PR Oficial
-                    </a> - Central de notícias e acompanhamento de programas no Paraná.
+                    🔗 <a href="https://www.sistemafaep.org.br/" target="_blank">Portal Oficial do Sistema FAEP/SENAR-PR</a> 
+                    <p style="font-size: 0.9rem; color: #555; margin-top: 5px;">Acompanhe notícias em tempo real, editais do agronegócio e eventos educacionais do estado.</p>
                 </li>
                 <li>
-                    <a href="https://www.sistemafaep.org.br/senar/" target="_blank" style="color: #1b4d3e; font-weight: bold; text-decoration: underline;">
-                        Portal de Cursos Gratuitos SENAR
-                    </a> - Plataforma com capacitações à distância e presenciais voltadas ao produtor e à comunidade escolar.
+                    📚 <a href="https://www.sistemafaep.org.br/senar/" target="_blank">Plataforma EAD e Cursos Gratuitos SENAR</a>
+                    <p style="font-size: 0.9rem; color: #555; margin-top: 5px;">Área voltada para a capacitação de produtores, trabalhadores do campo e aperfeiçoamento para educadores da rede pública.</p>
                 </li>
             </ul>
         </section>
 
-        <div style="text-align: center;">
-            <a href="index.html" class="btn-principal" style="text-decoration: none; display: inline-block;">← Voltar para a Página Inicial</a>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="index.html" class="btn-principal" style="text-decoration: none; display: inline-block;">← Voltar para a Home</a>
         </div>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Site Informativo sobre o Agrinho. Conteúdos e mídias integrados para fins didáticos.</p>
+        <p>&copy; 2026 Site Informativo sobre o Agrinho. Desenvolvido profissionalmente para fins educacionais.</p>
     </footer>
 
 </body>
