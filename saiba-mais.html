@@ -3,172 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imersão nos Pilares - Projeto Agrinho</title>
+    <title>Informações Adicionais - Projeto Agrinho</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Estilos extras específicos para deixar a página Saiba Mais ultra profissional */
-        .conteudo-detalhado {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        .bloco-pilar {
-            background: #fff;
-            padding: 35px;
-            border-radius: 12px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .bloco-pilar h2 {
-            color: #1b4d3e;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .pilar-imagem {
-            width: 100%;
-            max-height: 350px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* Proporção 16:9 */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        .secao-links {
-            background: #f0fdf4;
-            padding: 30px;
-            border-radius: 12px;
-            border-left: 5px solid #84cc16;
-            margin-top: 50px;
-        }
-        .secao-links ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .secao-links li {
-            margin-bottom: 15px;
-        }
-        .secao-links a {
-            color: #1b4d3e;
-            font-weight: bold;
-            text-decoration: underline;
-        }
-        .secao-links a:hover {
-            color: #65a30d;
-        }
-    </style>
 </head>
 <body>
 
     <header>
         <div class="container">
-            <div class="logo">🌿 Agrinho Painel Central</div>
+            <div class="logo">🌿 Agrinho Info</div>
             <nav>
-                <a href="index.html">← Voltar ao Início</a>
+                <a href="index.html">Voltar ao Início</a>
             </nav>
         </div>
     </header>
 
-    <main class="conteudo-detalhado">
-        
-        <div style="text-align: center; margin-bottom: 50px;">
-            <h1 style="color: #1b4d3e; font-size: 2.5rem;">Exploração Profunda dos Eixos Temáticos</h1>
-            <p style="color: #666; font-size: 1.1rem; margin-top: 10px;">Entenda as bases pedagógicas que guiam as ações do Sistema FAEP/SENAR-PR nas escolas.</p>
-        </div>
+    <section class="conteudo-secao">
+        <div class="container" style="text-align: left; max-width: 800px;">
+            <h2>Guia de Recursos e Informações Oficiais</h2>
+            <p style="margin-bottom: 30px; color: #666;">Explore materiais profundos, regulamentos e canais oficiais do Programa Agrinho.</p>
 
-        <article class="bloco-pilar" style="border-top: 6px solid #22c55e;">
-            <h2>🌱 Meio Ambiente e Sustentabilidade Global</h2>
-            <p>O eixo de Meio Ambiente prepara as novas gerações para enfrentar os desafios climáticos e ecológicos atuais. Os projetos desenvolvidos no programa vão além da teoria de reciclagem, estimulando ações reais como a criação de sistemas de reaproveitamento de água da chuva nas escolas, análise da pegada de carbono e discussões sobre o manejo sustentável na agricultura moderna (como o plantio direto e o uso biológico do solo).</p>
-            
-            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Sustentabilidade e meio ambiente campo" class="pilar-imagem">
-            
-            <h3>🎬 Vídeo Explicativo: O Ecossistema e o Campo</h3>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/5D34-mC58vY" allowfullscreen></iframe>
+            <div style="margin-bottom: 40px;">
+                <h3>📺 Vídeos Informativos</h3>
+                <p style="margin-bottom: 20px;">Assista a materiais especiais sobre o programa, a importância do agronegócio sustentável e depoimentos de quem participa:</p>
+                
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 8px; margin-bottom: 20px;">
+                    <iframe 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                        src="https://www.youtube.com/embed/S_8qU27vP0k" 
+                        title="Vídeo Institucional Agrinho" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p style="font-size: 0.9rem; color: #555; font-style: italic; margin-bottom: 30px;">Vídeo institucional demonstrando o impacto do Programa Agrinho nas escolas do Paraná.</p>
             </div>
-        </article>
 
-        <article class="bloco-pilar" style="border-top: 6px solid #3b82f6;">
-            <h2>🤝 Cidadania, Ética e Governança Social</h2>
-            <p>Nesta área, o foco é a construção do caráter público e comunitário do estudante. Abordam-se temas complexos como transparência fiscal, o papel dos três poderes do Estado, engajamento comunitário e o combate à desinformação (fake news). O Agrinho incentiva os alunos a identificarem gargalos de infraestrutura ou bem-estar nas suas cidades e a criarem abaixo-assinados ou propostas de lei mirins para os legislativos locais.</p>
-            
-            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80" alt="Trabalho em grupo de estudantes" class="pilar-imagem">
-            
-            <h3>🎬 Vídeo Explicativo: Cooperativismo e Sociedade</h3>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/g6IAn_uYv1E" allowfullscreen></iframe>
+            <div style="margin-bottom: 40px;">
+                <h3>📚 Materiais Pedagógicos Gratuitos</h3>
+                <p>O SENAR-PR disponibiliza anualmente livros, cartilhas e manuais metodológicos completos para download. Esses materiais auxiliam professores de diversas disciplinas a inserirem a sustentabilidade e a cidadania no currículo escolar de forma prática.</p>
+                <br>
+                <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80" alt="Livros didáticos" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
             </div>
-        </article>
 
-        <article class="bloco-pilar" style="border-top: 6px solid #ef4444;">
-            <h2>🍎 Saúde Integral e Segurança Alimentar</h2>
-            <p>Este pilar aborda a saúde sob uma ótica multifacetada: nutrição balanceada, sanidade mental na era digital e prevenção de doenças crônicas. O material ensina a leitura crítica de rótulos de alimentos ultraprocessados, a valorização da produção orgânica local e a importância de uma rotina longe do sedentarismo. As escolas são orientadas a estruturarem hortas comunitárias, conectando a biologia ao prato da merenda escolar.</p>
-            
-            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80" alt="Alimentação saudável e vegetais frescos" class="pilar-imagem">
-            
-            <h3>🎬 Vídeo Explicativo: Segurança Alimentar do Campo à Mesa</h3>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/Esk6vIbeSgg" allowfullscreen></iframe>
+            <div style="margin-bottom: 40px;">
+                <h3>🏆 Regulamento dos Concursos</h3>
+                <p>O Concurso Agrinho premia alunos e professores em várias categorias (Desenho, Redação e Experiência Pedagógica). Cada edição possui prazos estritos para a entrega dos trabalhos e critérios específicos de avaliação que devem ser seguidos à risca pelas escolas participantes.</p>
             </div>
-        </article>
 
-        <article class="bloco-pilar" style="border-top: 6px solid #f59e0b;">
-            <h2>🚀 Empreendedorismo e Transformação Digital</h2>
-            <p>O empreendedorismo no Agrinho visa o desenvolvimento do comportamento proativo e da resiliência. Os estudantes aprendem sobre educação financeira básica, orçamentos, conceitos de microeconomia e o uso da tecnologia (como robótica e inteligência artificial) aplicada à otimização de processos — preparando os jovens tanto para a criação de startups inovadoras na cidade quanto para a sucessão familiar tecnológica no agronegócio moderno.</p>
-            
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Jovens desenvolvendo projetos e ideias inovadoras" class="pilar-imagem">
-            
-            <h3>🎬 Vídeo Explicativo: Cultura Empreendedora e Futuro</h3>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/B_Gg4_rT84c" allowfullscreen></iframe>
-            </div>
-        </article>
+            <hr style="border: 0; border-top: 1px solid #ddd; margin-bottom: 30px;">
 
-        <section class="secao-links">
-            <h3>🔗 Portais e Documentos Oficiais - Sistema FAEP/SENAR-PR</h3>
-            <p style="margin-bottom: 20px;">Utilize os canais de comunicação oficiais para validar inscrições e baixar materiais pedagógicos regulamentados:</p>
-            <ul>
+            <h3>🔗 Links Oficiais Úteis</h3>
+            <p style="margin-bottom: 20px;">Para inscrições, editais atualizados e notícias oficiais, acesse os portais do Sistema FAEP/SENAR-PR:</p>
+            
+            <ul style="margin-left: 20px; margin-bottom: 40px; line-height: 2;">
                 <li>
-                    🌍 <a href="https://www.sistemafaep.org.br/" target="_blank">Portal Institucional do Sistema FAEP/SENAR-PR</a> 
-                    <br><small>Central de notícias econômicas, editais ativos e publicações periódicas do setor rural.</small>
+                    <a href="https://www.sistemafaep.org.br/" target="_blank" style="color: #1b4d3e; font-weight: bold;">
+                        Portal do Sistema FAEP/SENAR-PR
+                    </a> - Página principal com notícias, cursos e eventos do agronegócio e da educação rural no Paraná.
                 </li>
                 <li>
-                    📖 <a href="https://www.sistemafaep.org.br/senar/" target="_blank">Catálogo de Serviços e Cursos do SENAR-PR</a> 
-                    <br><small>Acesso direto a treinamentos gratuitos certificados para a comunidade do Estado do Paraná.</small>
-                </li>
-                <li>
-                    🏆 <a href="https://www.sistemafaep.org.br/" target="_blank">Regulamentos Oficiais e Cronogramas do Concurso Agrinho</a> 
-                    <br><small>Página de download das diretrizes de redação, desenho e projetos para o ano vigente.</small>
+                    <a href="https://www.sistemafaep.org.br/senar/" target="_blank" style="color: #1b4d3e; font-weight: bold;">
+                        Cursos do SENAR-PR
+                    </a> - Informações sobre formações gratuitas voltadas para produtores, trabalhadores rurais e comunidade escolar.
                 </li>
             </ul>
-        </section>
 
-        <div style="text-align: center; margin-top: 50px;">
-            <a href="index.html" class="btn-principal" style="text-decoration: none; display: inline-block;">← Voltar para o Portal Principal</a>
+            <a href="index.html" class="btn-principal" style="text-decoration: none; display: inline-block;">← Voltar para a Página Inicial</a>
         </div>
-
-    </main>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Portal Informativo Integrado sobre o Agrinho. Todos os direitos reservados às instituições realizadoras.</p>
+        <p>&copy; 2026 Site Informativo sobre o Agrinho. Desenvolvido para fins educacionais.</p>
     </footer>
 
 </body>
